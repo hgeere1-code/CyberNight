@@ -190,49 +190,114 @@ button.scale_it_bro svg {
 
 /* Global */
 .Root__globalNav,
+.global-nav > *,
 /* Top bar */
 .Root__nav-bar,
-.main-entityHeader-container>*,
+#global-nav-bar,
+
+.main-entityHeader-container > *,
 .playlist-playlist-playlistContent,
+
 /* Playlist colored background */
 .main-entityHeader-backgroundColor,
+._ddPhxHdxmpT13IbjTmr,
+.QqprhKqwqIsC3c9SIKOE,
+.sxMpFt17cJVTesE9u6fX,
 .playlist-playlist-actionBarBackground-background,
 .main-actionBarBackground-background,
-.Root__now-playing-bar>button,
 .lyrics-lyrics-background,
-.main-view-container__scroll-node-child>main>section>div>div:nth-child(2),
+.main-view-container__scroll-node-child
+    > main
+    > section
+    > div
+    > div:nth-child(2),
 .Bdcf5g__Rug3TGqSdbiy,
+[data-testid="playlist-page"] [data-testid="entity-header"] > *,
+
+/* Bottom bar of the app */
 .Root__now-playing-bar,
+:has(>[data-testid="now-playing-bar"]),
+.Root__now-playing-bar > button,
+:has(>[data-testid="now-playing-bar"]) > button,
+
 /* Sidebar left your library */
 #Desktop_LeftSidebar_Id,
 .YourLibraryX,
+.main-yourLibraryX-libraryRootlist [role="presentation"],
+.main-yourLibraryX-libraryRootlist [aria-rowindex="1"],
+
 #Desktop_PanelContainer_Id::before,
 .main-home-homeHeader,
-.main-view-container__scroll-node-child>*>*,
+.main-view-container__scroll-node-child > * > *,
 .artist-artistDiscography-headerContainer,
-.main-view-container__scroll-node-child>main>section>div:last-child,
+.main-view-container__scroll-node-child > main > section > div:last-child,
 .search-searchCategory-contentArea::after,
+
+/* Small black gradient on rhs video player */
 .main-nowPlayingView-contextItemInfo::before,
+.f8pB2G3XUFXNNPQ_Ppxb:before,
+
 .Box-group-naked-listRow-isInteractive-hasLeadingOrMedia-draggable-minBlockSize_56px,
 /* Artist page colored background */
-.main-view-container .before-scroll-node>*>:last-child,
-.main-view-container .before-scroll-node>*>:last-child:after,
+    .main-view-container
+    .before-scroll-node
+    > *
+    > :last-child,
+.main-view-container .before-scroll-node > * > :last-child:after,
+.oCSWtOAH_CgjIsi_H_PS,
+[data-testid="overscroll-background"],
+
 /* Fullscreen artist page on playing music */
 /* [data-overlayscrollbars-viewport="scrollbarHidden overflowXHidden overflowYScroll"]>*>*>*>*>*:first-child, */
+
 /* Right sidebar for queue */
-.Root__right-sidebar>*,
+.Root__right-sidebar > *,
+.iZl4hCeW2xyCCK5nSCCL,
+
+/* Right sidebar collapsed */
+.Root__right-sidebar-fauxMainViewEnd > *,
+.SC_eWQl28srvyLED > *,
+
 /* Fullscreen lyrics */
 [data-overlayscrollbars-initialize="true"]:has(#VideoPlayerCinema_ReactPortal),
 .lyrics-lyrics-container:first-child,
-:has(+.lyrics-lyrics-container),
+:has(+ .lyrics-lyrics-container),
 /* Spicetify marketplace */
 .marketplace-header
 
-/* Remove bg */
-    {
+/* Remove bg */ {
     background-color: transparent !important;
     background-image: none !important;
 }
+
+/* ---------------------------- */
+/* See through black background */
+/* ---------------------------- */
+
+/* Bottom now Playing bar */
+.main-nowPlayingBar-nowPlayingBar,
+[data-testid="now-playing-bar"],
+
+.view-homeShortcutsGrid-shortcut,
+#Desktop_PanelContainer_Id,
+/* Center main view in the middle of the screen */
+.Root__main-view,
+#main-view,
+
+/* Sidebar left your library */
+#Desktop_LeftSidebar_Id > * > *,
+.main-yourLibraryX-library,
+
+/* Right sidebar collapsed */
+.Root__right-sidebar-overlay,
+.wJiY1vDfuci2a4db,
+.Clgyk1V8iQGkU1G6m5Lo
+
+/* Filter tags */
+.ChipInnerComponent-sm {
+    background-color: var(--spice-main-elevated) !important;
+}
+
 
 .view-homeShortcutsGrid-shortcut,
 #Desktop_PanelContainer_Id,
